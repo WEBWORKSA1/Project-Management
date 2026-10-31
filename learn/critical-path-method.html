@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Critical Path Method (CPM): Step-by-Step with a Worked Example | Project.Management</title>
+<meta name="description" content="Learn the critical path method step by step: network diagrams, forward and backward pass, total and free float, a fully worked example, and how to compress a schedule.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://project.management/learn/critical-path-method.html">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<meta property="og:type" content="article"><meta property="og:site_name" content="Project.Management">
+<meta property="og:title" content="Critical Path Method (CPM): Step-by-Step with a Worked Example | Project.Management"><meta property="og:description" content="Learn the critical path method step by step: network diagrams, forward and backward pass, total and free float, a fully worked example, and how to compress a schedule.">
+<meta property="og:url" content="https://project.management/learn/critical-path-method.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1f4fd8">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>try{var t=localStorage.getItem('pm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Critical Path Method (CPM)", "description": "Learn the critical path method step by step: network diagrams, forward and backward pass, total and free float, a fully worked example, and how to compress a schedule.", "dateModified": "2026-10-31", "author": {"@type": "Organization", "name": "Project.Management"}, "publisher": {"@type": "Organization", "name": "Project.Management"}, "mainEntityOfPage": "https://project.management/learn/critical-path-method.html"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://project.management/"}, {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://project.management/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Critical Path Method", "item": "https://project.management/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership — <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></div>
+<header class="site-header"><div class="wrap nav"><a class="logo" href="../index.html" aria-label="Project.Management home"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1f4fd8"/><rect x="7" y="8" width="12" height="4" rx="2" fill="#fff"/><rect x="11" y="14" width="14" height="4" rx="2" fill="#7fe3d6"/><rect x="7" y="20" width="9" height="4" rx="2" fill="#ffb648"/></svg><span>Project<b>.</b>Management</span></a>
+<ul class="menu" id="menu"><li data-dd="tools"><a href="../tools/index.html">Tools</a></li>
+<li data-dd="learn"><a href="../learn/index.html">Learn</a></li>
+<li><a href="../templates.html">Templates</a></li>
+<li><a href="../software.html">Software</a></li>
+<li><a href="../certifications.html">Certifications</a></li>
+<li><a href="../videos.html">Videos</a></li>
+<li data-dd="more"><a href="../glossary.html">Glossary</a></li>
+</ul>
+<div class="nav-actions"><button class="icon-btn" data-search aria-label="Search (Ctrl+K)" title="Search (Ctrl+K)">⌕</button><button class="icon-btn" id="theme" aria-label="Toggle dark mode">☾</button><a class="btn btn-primary btn-sm" href="../get-help.html">Get Expert Help</a><button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></div>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../learn/index.html">Learn</a> › Critical Path Method</nav><span class="eyebrow">Guide · Scheduling</span><h1>Critical Path Method (CPM)</h1><p class="lead">Find the chain of activities that determines your finish date — and know exactly where you have slack.</p>
+<p class="meta">Updated 2026-10-31 · 9 min read · By the Project.Management editorial team</p>
+</div>
+</section>
+<section><div class="wrap article">
+<article class="prose"><p>The <strong>critical path</strong> is the longest sequence of dependent activities from the start to the end of a project. Its length is the shortest possible project duration. Any delay to an activity on the critical path delays the whole project by the same amount; activities off the critical path have <strong>float</strong> (also called slack) — time they can slip without moving the end date.</p>
+<h2 id="what-you-need">What you need</h2>
+<ul><li>A list of activities (from your <a href="../learn/work-breakdown-structure.html">WBS</a>).</li>
+<li>A duration estimate for each.</li>
+<li>The dependencies between them (most often finish-to-start).</li>
+</ul>
+<h2 id="step-1-draw-the-network">Step 1: Draw the network</h2>
+<p>Use the activity-on-node method: each activity is a box, arrows show dependencies. Our example:</p>
+<div class="tbl-wrap"><table><thead><tr><th>ID</th><th>Activity</th><th>Duration</th><th>Predecessors</th></tr>
+</thead>
+<tbody>
+<tr><td>A</td><td>Requirements</td><td>5</td><td>—</td></tr>
+<tr><td>B</td><td>Architecture</td><td>4</td><td>A</td></tr>
+<tr><td>C</td><td>UI design</td><td>6</td><td>A</td></tr>
+<tr><td>D</td><td>Backend build</td><td>10</td><td>B</td></tr>
+<tr><td>E</td><td>Frontend build</td><td>8</td><td>C</td></tr>
+<tr><td>F</td><td>Integration</td><td>3</td><td>D, E</td></tr>
+<tr><td>G</td><td>Testing</td><td>5</td><td>F</td></tr>
+<tr><td>H</td><td>Training material</td><td>4</td><td>C</td></tr>
+<tr><td>I</td><td>Launch</td><td>1</td><td>G, H</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="step-2-forward-pass-earliest-dates">Step 2: Forward pass (earliest dates)</h2>
+<p>For each activity, Early Start (ES) = the largest Early Finish of its predecessors (0 for the first), and Early Finish (EF) = ES + duration.</p>
+<ul><li>A: ES 0, EF 5 · B: 5–9 · C: 5–11 · D: 9–19 · E: 11–19 · H: 11–15</li>
+<li>F: ES = max(19, 19) = 19, EF 22 · G: 22–27 · I: ES = max(27, 15) = 27, EF 28</li>
+</ul>
+<p>Project duration = <strong>28 days</strong>.</p>
+<h2 id="step-3-backward-pass-latest-dates">Step 3: Backward pass (latest dates)</h2>
+<p>Starting from the end, Late Finish (LF) = the smallest Late Start of successors (project end for the last), and Late Start (LS) = LF − duration.</p>
+<ul><li>I: 27–28 · G: 22–27 · F: 19–22 · D: 9–19 · E: 11–19 · B: 5–9</li>
+<li>H: LF = 27, LS = 23 · C: LF = min(LS of E = 11, LS of H = 23) = 11, LS 5 · A: 0–5</li>
+</ul>
+<h2 id="step-4-calculate-float">Step 4: Calculate float</h2>
+<p>Total float = LS − ES. Here every activity has zero float except H (23 − 11 = 12 days). That means there are <strong>two critical paths</strong> of 28 days: A→B→D→F→G→I and A→C→E→F→G→I. Two parallel critical paths are a warning sign — the project has no schedule buffer on either branch.</p>
+<p>Check this example yourself in the <a href="../tools/critical-path-calculator.html">critical path calculator</a> (it loads as the default example).</p>
+<h2 id="compressing-the-schedule">Compressing the schedule</h2>
+<ul><li><strong>Crashing:</strong> add resources to critical activities. Compare cost per day saved and crash the cheapest first.</li>
+<li><strong>Fast-tracking:</strong> overlap activities that were sequential, e.g. start frontend build before UI design is fully signed off. Increases risk of rework.</li>
+<li><strong>Reduce scope</strong> on the critical path, or move work off it.</li>
+</ul>
+<p>After every change, recalculate: shortening one path often makes another one critical.</p>
+<h2 id="cpm-vs-pert-vs-critical-chain">CPM vs PERT vs critical chain</h2>
+<p>CPM uses single-point duration estimates. <a href="../tools/pert-estimator.html">PERT</a> uses three-point estimates to model uncertainty. Critical chain project management adds resource constraints and pools contingency into shared buffers at the end of the chain rather than padding each task.</p>
+<div class="keybox no-print"><h3>Put this into practice</h3>
+<p class="mb0">Use our free tools to apply what you just read — or <a href="../get-help.html">get a free consultation</a> if you want an expert to look at your project.</p>
+</div>
+</article>
+<aside class="aside">
+<div class="card toc"><h3>On this page</h3>
+<a href="#what-you-need">What you need</a><a href="#step-1-draw-the-network">Step 1: Draw the network</a><a href="#step-2-forward-pass-earliest-dates">Step 2: Forward pass (earliest dates)</a><a href="#step-3-backward-pass-latest-dates">Step 3: Backward pass (latest dates)</a><a href="#step-4-calculate-float">Step 4: Calculate float</a><a href="#compressing-the-schedule">Compressing the schedule</a><a href="#cpm-vs-pert-vs-critical-chain">CPM vs PERT vs critical chain</a></div>
+<div class="card"><h3>Free tools &amp; guides</h3>
+<ul class="list-check small"><li><a href="../tools/critical-path-calculator.html">Critical path calculator</a></li>
+<li><a href="../tools/pert-estimator.html">PERT estimator</a></li>
+<li><a href="../tools/gantt-chart-maker.html">Gantt chart maker</a></li>
+</ul>
+</div>
+<div class="card" style="background:var(--brand-soft)"><h3>Stuck on a project?</h3>
+<p>Get matched with a vetted PM consultant or the right software in 48 hours.</p>
+<a class="btn btn-primary btn-sm mt" href="../get-help.html">Get expert help</a></div>
+</aside></div>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap"><div id="f-cols"></div>
+<nav class="f-legal" aria-label="Footer"><a href="../about.html">About</a> · <a href="../contact.html">Contact</a> · <a href="../get-help.html">Get expert help</a> · <a href="../support.html">Support us</a> · <a href="../advertise.html">Advertise</a> · <a href="../contests.html">Contests</a> · <a href="../careers.html">Careers</a> · <a href="../privacy.html">Privacy policy</a> · <a href="../terms.html">Terms of use</a> · <a href="../cookies.html">Cookie policy</a> · <a href="../disclaimer.html">Disclaimer</a> · <a href="../trademark.html">Trademark &amp; copyright</a> · <a href="../sitemap.html">Sitemap</a></nav>
+<div class="f-bottom"><span>© 2026 Project.Management. Original content. Independent; not affiliated with PMI®, ProjectManagement.com, PeopleCert/AXELOS, Scrum.org, Scrum Alliance or any software vendor. <a href="../trademark.html">Trademark notice</a>.</span><span>Interested in this website or domain? <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></span></div>
+</div>
+</footer>
+<script src="../assets/js/search-index.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
