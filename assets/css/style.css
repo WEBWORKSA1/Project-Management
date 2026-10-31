@@ -31,7 +31,8 @@ p{margin:0 0 1em}
 
 /* Top interest bar */
 .topbar{background:linear-gradient(90deg,#0d1526,#1f3a8a);color:#e8ecf6;font-size:.86rem;text-align:center;padding:7px 12px}
-.topbar a{color:#ffd28a;font-weight:650}
+.topbar a{color:#e8ecf6;font-weight:600}
+.topbar a:hover{color:#ffd28a}
 
 /* Header */
 .site-header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
