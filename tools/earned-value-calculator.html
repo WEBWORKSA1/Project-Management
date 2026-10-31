@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Earned Value Calculator — CPI, SPI, EAC, VAC, TCPI | Project.Management</title>
+<meta name="description" content="Free earned value management calculator. Enter BAC, PV, EV and AC to get CV, SV, CPI, SPI, EAC, ETC, VAC and TCPI with a plain-English project health verdict.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://project.management/tools/earned-value-calculator.html">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<meta property="og:type" content="website"><meta property="og:site_name" content="Project.Management">
+<meta property="og:title" content="Earned Value Calculator — CPI, SPI, EAC, VAC, TCPI | Project.Management"><meta property="og:description" content="Free earned value management calculator. Enter BAC, PV, EV and AC to get CV, SV, CPI, SPI, EAC, ETC, VAC and TCPI with a plain-English project health verdict.">
+<meta property="og:url" content="https://project.management/tools/earned-value-calculator.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1f4fd8">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>try{var t=localStorage.getItem('pm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Earned Value Calculator", "description": "Free earned value management calculator. Enter BAC, PV, EV and AC to get CV, SV, CPI, SPI, EAC, ETC, VAC and TCPI with a plain-English project health verdict.", "applicationCategory": "BusinessApplication", "operatingSystem": "Any (web browser)", "url": "https://project.management/tools/earned-value-calculator.html", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://project.management/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://project.management/tools/index.html"}, {"@type": "ListItem", "position": 3, "name": "Earned Value Calculator", "item": "https://project.management/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership — <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></div>
+<header class="site-header"><div class="wrap nav"><a class="logo" href="../index.html" aria-label="Project.Management home"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1f4fd8"/><rect x="7" y="8" width="12" height="4" rx="2" fill="#fff"/><rect x="11" y="14" width="14" height="4" rx="2" fill="#7fe3d6"/><rect x="7" y="20" width="9" height="4" rx="2" fill="#ffb648"/></svg><span>Project<b>.</b>Management</span></a>
+<ul class="menu" id="menu"><li data-dd="tools"><a href="../tools/index.html">Tools</a></li>
+<li data-dd="learn"><a href="../learn/index.html">Learn</a></li>
+<li><a href="../templates.html">Templates</a></li>
+<li><a href="../software.html">Software</a></li>
+<li><a href="../certifications.html">Certifications</a></li>
+<li><a href="../videos.html">Videos</a></li>
+<li data-dd="more"><a href="../glossary.html">Glossary</a></li>
+</ul>
+<div class="nav-actions"><button class="icon-btn" data-search aria-label="Search (Ctrl+K)" title="Search (Ctrl+K)">⌕</button><button class="icon-btn" id="theme" aria-label="Toggle dark mode">☾</button><a class="btn btn-primary btn-sm" href="../get-help.html">Get Expert Help</a><button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></div>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../tools/index.html">Tools</a> › Earned Value Calculator</nav><span class="eyebrow">Free tool</span><h1>Earned Value Calculator</h1><p class="lead">Enter four numbers and get every earned value metric — plus a plain-English verdict you can paste straight into a status report.</p>
+</div>
+</section>
+<section><div class="wrap grid g2" style="align-items:start">
+<form class="tool-shell" id="evm" onsubmit="return false">
+<h3>Inputs</h3>
+<div class="row"><div class="field"><label for="e-cur">Currency symbol</label><input id="e-cur" name="cur" value="$" maxlength="3"></div>
+<div class="field"><label for="e-bac">Budget at completion (BAC)</label><input id="e-bac" name="bac" type="number" min="0" value="200000"></div>
+</div>
+<div class="row"><div class="field"><label for="e-pv">Planned value (PV)</label><input id="e-pv" name="pv" type="number" min="0" value="90000"></div>
+<div class="field"><label for="e-ev">Earned value (EV)</label><input id="e-ev" name="ev" type="number" min="0" value="80000"></div>
+</div>
+<div class="field"><label for="e-ac">Actual cost (AC)</label><input id="e-ac" name="ac" type="number" min="0" value="95000"></div>
+<p class="small muted">EV = BAC × % of work actually complete. PV = BAC × % of work that should be complete by now.</p>
+<button class="btn btn-ghost btn-sm no-print" type="button" id="e-sample">Load example</button>
+<button class="btn btn-ghost btn-sm no-print" type="button" onclick="window.print()">Print / PDF</button>
+</form>
+<div class="tool-shell"><h3>Results</h3>
+<div id="e-out"></div>
+</div>
+</div>
+</section>
+<section class="alt"><div class="wrap prose" style="max-width:860px">
+<h2>Earned value formulas at a glance</h2>
+<div class="tbl-wrap"><table><thead><tr><th>Metric</th><th>Formula</th><th>Good when</th></tr>
+</thead>
+<tbody>
+<tr><td>Cost variance (CV)</td><td>EV − AC</td><td>Positive</td></tr>
+<tr><td>Schedule variance (SV)</td><td>EV − PV</td><td>Positive</td></tr>
+<tr><td>Cost performance index (CPI)</td><td>EV ÷ AC</td><td>≥ 1.0</td></tr>
+<tr><td>Schedule performance index (SPI)</td><td>EV ÷ PV</td><td>≥ 1.0</td></tr>
+<tr><td>Estimate at completion (EAC)</td><td>BAC ÷ CPI</td><td>≤ BAC</td></tr>
+<tr><td>Estimate to complete (ETC)</td><td>EAC − AC</td><td>—</td></tr>
+<tr><td>Variance at completion (VAC)</td><td>BAC − EAC</td><td>Positive</td></tr>
+<tr><td>To-complete performance index (TCPI)</td><td>(BAC − EV) ÷ (BAC − AC)</td><td>≤ 1.0</td></tr>
+</tbody>
+</table>
+</div>
+<h2>Worked example</h2>
+<p>A $200,000 project should be 45% done (PV = 90,000) but is only 40% done (EV = 80,000), and 95,000 has been spent (AC). CPI = 80 ÷ 95 = 0.84 and SPI = 80 ÷ 90 = 0.89. The project is over budget and behind schedule. At the current efficiency it will cost about 237,500 — roughly 37,500 over budget. Read the full <a href="../learn/earned-value-management.html">earned value management guide</a>.</p>
+</div>
+</section>
+<section><div class="wrap" style="max-width:860px"><h2>Frequently asked questions</h2>
+<details class="faq"><summary>What do CPI and SPI mean?</summary><p>CPI (cost performance index) = EV ÷ AC; above 1.0 means under budget. SPI (schedule performance index) = EV ÷ PV; above 1.0 means ahead of schedule.</p>
+</details>
+<details class="faq"><summary>What is the difference between PV and EV?</summary><p>Planned Value is the budgeted cost of the work scheduled to be done by now. Earned Value is the budgeted cost of the work actually completed by now.</p>
+</details>
+<details class="faq"><summary>Which EAC formula should I use?</summary><p>Use BAC ÷ CPI when current cost performance is expected to continue (most common). Use AC + (BAC − EV) when the variance was a one-off. Use the CPI × SPI version when schedule pressure will also affect cost.</p>
+</details>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap"><div id="f-cols"></div>
+<nav class="f-legal" aria-label="Footer"><a href="../about.html">About</a> · <a href="../contact.html">Contact</a> · <a href="../get-help.html">Get expert help</a> · <a href="../support.html">Support us</a> · <a href="../advertise.html">Advertise</a> · <a href="../contests.html">Contests</a> · <a href="../careers.html">Careers</a> · <a href="../privacy.html">Privacy policy</a> · <a href="../terms.html">Terms of use</a> · <a href="../cookies.html">Cookie policy</a> · <a href="../disclaimer.html">Disclaimer</a> · <a href="../trademark.html">Trademark &amp; copyright</a> · <a href="../sitemap.html">Sitemap</a></nav>
+<div class="f-bottom"><span>© 2026 Project.Management. Original content. Independent; not affiliated with PMI®, ProjectManagement.com, PeopleCert/AXELOS, Scrum.org, Scrum Alliance or any software vendor. <a href="../trademark.html">Trademark notice</a>.</span><span>Interested in this website or domain? <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></span></div>
+</div>
+</footer>
+<script src="../assets/js/search-index.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/tools/evm.js" defer></script>
+</body>
+</html>
