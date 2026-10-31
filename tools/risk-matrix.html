@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Risk Matrix &amp; Risk Register Template — Free 5×5 Tool | Project.Management</title>
+<meta name="description" content="Free online risk register with a 5×5 probability-impact heatmap. Score risks, assign owners and responses, sort by exposure and export to CSV.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://project.management/tools/risk-matrix.html">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<meta property="og:type" content="website"><meta property="og:site_name" content="Project.Management">
+<meta property="og:title" content="Risk Matrix &amp; Risk Register Template — Free 5×5 Tool | Project.Management"><meta property="og:description" content="Free online risk register with a 5×5 probability-impact heatmap. Score risks, assign owners and responses, sort by exposure and export to CSV.">
+<meta property="og:url" content="https://project.management/tools/risk-matrix.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1f4fd8">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>try{var t=localStorage.getItem('pm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Risk Matrix & Risk Register", "description": "Free online risk register with a 5×5 probability-impact heatmap. Score risks, assign owners and responses, sort by exposure and export to CSV.", "applicationCategory": "BusinessApplication", "operatingSystem": "Any (web browser)", "url": "https://project.management/tools/risk-matrix.html", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://project.management/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://project.management/tools/index.html"}, {"@type": "ListItem", "position": 3, "name": "Risk Matrix", "item": "https://project.management/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership — <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></div>
+<header class="site-header"><div class="wrap nav"><a class="logo" href="../index.html" aria-label="Project.Management home"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1f4fd8"/><rect x="7" y="8" width="12" height="4" rx="2" fill="#fff"/><rect x="11" y="14" width="14" height="4" rx="2" fill="#7fe3d6"/><rect x="7" y="20" width="9" height="4" rx="2" fill="#ffb648"/></svg><span>Project<b>.</b>Management</span></a>
+<ul class="menu" id="menu"><li data-dd="tools"><a href="../tools/index.html">Tools</a></li>
+<li data-dd="learn"><a href="../learn/index.html">Learn</a></li>
+<li><a href="../templates.html">Templates</a></li>
+<li><a href="../software.html">Software</a></li>
+<li><a href="../certifications.html">Certifications</a></li>
+<li><a href="../videos.html">Videos</a></li>
+<li data-dd="more"><a href="../glossary.html">Glossary</a></li>
+</ul>
+<div class="nav-actions"><button class="icon-btn" data-search aria-label="Search (Ctrl+K)" title="Search (Ctrl+K)">⌕</button><button class="icon-btn" id="theme" aria-label="Toggle dark mode">☾</button><a class="btn btn-primary btn-sm" href="../get-help.html">Get Expert Help</a><button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></div>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../tools/index.html">Tools</a> › Risk Matrix</nav><span class="eyebrow">Free tool</span><h1>Risk Matrix & Risk Register</h1><p class="lead">Log project risks, score probability × impact on a 5×5 scale and see them on a live heatmap. Assign owners and responses, then export your register.</p>
+</div>
+</section>
+<section><div class="wrap"><div class="tool-shell">
+<div class="toolbar no-print"><button class="btn btn-primary btn-sm" id="r-add">+ Add risk</button><button class="btn btn-ghost btn-sm" id="r-sort">Sort by score</button><button class="btn btn-ghost btn-sm" id="r-sample">Load example</button><button class="btn btn-ghost btn-sm" id="r-csv">Export CSV</button><button class="btn btn-ghost btn-sm" onclick="window.print()">Print / PDF</button></div>
+<div class="tbl-wrap"><table class="edit" style="min-width:1050px"><thead><tr><th>ID</th><th>Risk</th><th>Category</th><th>Probability</th><th>Impact</th><th>Score</th><th>Owner</th><th>Response</th><th>Action</th><th></th></tr>
+</thead>
+<tbody id="r-body"></tbody>
+</table>
+</div>
+<div class="kpis" id="r-sum"></div>
+<h3 class="mt">Heatmap</h3>
+<div class="heat" id="r-heat"></div>
+<p class="small muted mt">P = probability (rows), I = impact (columns). Risk IDs are placed in their cell.</p>
+</div>
+</div>
+</section>
+<section class="alt"><div class="wrap prose" style="max-width:860px">
+<h2>How to write a good risk statement</h2>
+<p>Use cause → risk → effect: <em>"Because the vendor's API is still in beta (cause), it may change without notice (risk), which would break checkout and delay launch by 2–4 weeks (effect)."</em> Vague risks such as "resources" or "budget" cannot be scored or owned.</p>
+<h2>Probability and impact scales</h2>
+<div class="tbl-wrap"><table><thead><tr><th>Score</th><th>Probability</th><th>Impact (example)</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>Rare (&lt;10%)</td><td>Negligible; absorbed by the team</td></tr>
+<tr><td>2</td><td>Unlikely (10–30%)</td><td>Minor slip, &lt;2% budget</td></tr>
+<tr><td>3</td><td>Possible (30–50%)</td><td>Milestone moves, 2–5% budget</td></tr>
+<tr><td>4</td><td>Likely (50–80%)</td><td>Key deliverable late, 5–10% budget</td></tr>
+<tr><td>5</td><td>Almost certain (&gt;80%)</td><td>Objectives fail, &gt;10% budget</td></tr>
+</tbody>
+</table>
+</div>
+<p>Calibrate impact to your project — a 2% overrun on a $10M programme is not the same as on a $20k website. More in the <a href="../learn/risk-management.html">project risk management guide</a>.</p>
+</div>
+</section>
+<section><div class="wrap" style="max-width:860px"><h2>Frequently asked questions</h2>
+<details class="faq"><summary>How is the risk score calculated?</summary><p>Score = probability (1–5) × impact (1–5), giving 1 to 25. 15–25 is Critical, 10–14 High, 5–9 Medium and 1–4 Low.</p>
+</details>
+<details class="faq"><summary>What are the risk response strategies?</summary><p>For threats: avoid, mitigate, transfer, accept or escalate. For opportunities: exploit, enhance, share, accept or escalate.</p>
+</details>
+<details class="faq"><summary>How often should I review the risk register?</summary><p>At least every two weeks, and at every phase gate. Review high and critical risks weekly.</p>
+</details>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap"><div id="f-cols"></div>
+<nav class="f-legal" aria-label="Footer"><a href="../about.html">About</a> · <a href="../contact.html">Contact</a> · <a href="../get-help.html">Get expert help</a> · <a href="../support.html">Support us</a> · <a href="../advertise.html">Advertise</a> · <a href="../contests.html">Contests</a> · <a href="../careers.html">Careers</a> · <a href="../privacy.html">Privacy policy</a> · <a href="../terms.html">Terms of use</a> · <a href="../cookies.html">Cookie policy</a> · <a href="../disclaimer.html">Disclaimer</a> · <a href="../trademark.html">Trademark &amp; copyright</a> · <a href="../sitemap.html">Sitemap</a></nav>
+<div class="f-bottom"><span>© 2026 Project.Management. Original content. Independent; not affiliated with PMI®, ProjectManagement.com, PeopleCert/AXELOS, Scrum.org, Scrum Alliance or any software vendor. <a href="../trademark.html">Trademark notice</a>.</span><span>Interested in this website or domain? <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></span></div>
+</div>
+</footer>
+<script src="../assets/js/search-index.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/tools/risk.js" defer></script>
+</body>
+</html>
