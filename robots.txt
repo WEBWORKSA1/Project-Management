@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /_build/
+
+User-agent: Mediapartners-Google
+Allow: /
+
+Sitemap: https://project.management/sitemap.xml
