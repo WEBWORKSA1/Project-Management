@@ -4,7 +4,7 @@ Free, no-signup project management tools, templates and guides. A static site ho
 
 - **Live (GitHub Pages):** https://webworksa1.github.io/Project-Management/
 - **Domain:** project.management (see "Custom domain" below)
-- **Interested in this website, the domain, sponsorship, advertising or partnership?** https://web.works/contact
+- **Interested in this website, the domain, sponsorship, advertising or partnership?** [Contact the owner](https://web.works/contact)
 
 ## What's inside
 - **12 browser tools** in `tools/`: Gantt, Kanban, critical path, PERT, earned value, risk matrix, RACI, project charter, stakeholder map, sprint capacity, meeting cost and a methodology quiz.
