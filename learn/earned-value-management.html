@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Earned Value Management (EVM): Formulas, Examples &amp; Interpretation | Project.Management</title>
+<meta name="description" content="Earned value management made simple: PV, EV, AC, CV, SV, CPI, SPI, EAC, ETC, VAC and TCPI explained with a worked example, plus how to measure EV and report it.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://project.management/learn/earned-value-management.html">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+<meta property="og:type" content="article"><meta property="og:site_name" content="Project.Management">
+<meta property="og:title" content="Earned Value Management (EVM): Formulas, Examples &amp; Interpretation | Project.Management"><meta property="og:description" content="Earned value management made simple: PV, EV, AC, CV, SV, CPI, SPI, EAC, ETC, VAC and TCPI explained with a worked example, plus how to measure EV and report it.">
+<meta property="og:url" content="https://project.management/learn/earned-value-management.html">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#1f4fd8">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>try{var t=localStorage.getItem('pm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Earned Value Management (EVM)", "description": "Earned value management made simple: PV, EV, AC, CV, SV, CPI, SPI, EAC, ETC, VAC and TCPI explained with a worked example, plus how to measure EV and report it.", "dateModified": "2026-10-31", "author": {"@type": "Organization", "name": "Project.Management"}, "publisher": {"@type": "Organization", "name": "Project.Management"}, "mainEntityOfPage": "https://project.management/learn/earned-value-management.html"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://project.management/"}, {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://project.management/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Earned Value Management", "item": "https://project.management/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership — <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></div>
+<header class="site-header"><div class="wrap nav"><a class="logo" href="../index.html" aria-label="Project.Management home"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1f4fd8"/><rect x="7" y="8" width="12" height="4" rx="2" fill="#fff"/><rect x="11" y="14" width="14" height="4" rx="2" fill="#7fe3d6"/><rect x="7" y="20" width="9" height="4" rx="2" fill="#ffb648"/></svg><span>Project<b>.</b>Management</span></a>
+<ul class="menu" id="menu"><li data-dd="tools"><a href="../tools/index.html">Tools</a></li>
+<li data-dd="learn"><a href="../learn/index.html">Learn</a></li>
+<li><a href="../templates.html">Templates</a></li>
+<li><a href="../software.html">Software</a></li>
+<li><a href="../certifications.html">Certifications</a></li>
+<li><a href="../videos.html">Videos</a></li>
+<li data-dd="more"><a href="../glossary.html">Glossary</a></li>
+</ul>
+<div class="nav-actions"><button class="icon-btn" data-search aria-label="Search (Ctrl+K)" title="Search (Ctrl+K)">⌕</button><button class="icon-btn" id="theme" aria-label="Toggle dark mode">☾</button><a class="btn btn-primary btn-sm" href="../get-help.html">Get Expert Help</a><button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button></div>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../learn/index.html">Learn</a> › Earned Value Management</nav><span class="eyebrow">Guide · Cost & schedule</span><h1>Earned Value Management (EVM)</h1><p class="lead">Three numbers tell you whether a project is on budget and on schedule — and where it is heading.</p>
+<p class="meta">Updated 2026-10-31 · 9 min read · By the Project.Management editorial team</p>
+</div>
+</section>
+<section><div class="wrap article">
+<article class="prose"><p>Most projects track cost by comparing spend to budget. That is misleading: being 50% through the budget says nothing about whether 50% of the work is done. <strong>Earned value management (EVM)</strong> solves this by measuring the value of the work actually completed and comparing it with both the plan and the actual cost.</p>
+<h2 id="the-three-core-measures">The three core measures</h2>
+<ul><li><strong>Planned Value (PV):</strong> the budgeted cost of the work <em>scheduled</em> to be done by now.</li>
+<li><strong>Earned Value (EV):</strong> the budgeted cost of the work <em>actually completed</em> by now.</li>
+<li><strong>Actual Cost (AC):</strong> what the completed work actually cost.</li>
+</ul>
+<p>Plus <strong>Budget at Completion (BAC)</strong>: the total approved budget.</p>
+<h2 id="variances-and-indices">Variances and indices</h2>
+<div class="tbl-wrap"><table><thead><tr><th>Measure</th><th>Formula</th><th>Interpretation</th></tr>
+</thead>
+<tbody>
+<tr><td>Cost variance (CV)</td><td>EV − AC</td><td>Negative = over budget</td></tr>
+<tr><td>Schedule variance (SV)</td><td>EV − PV</td><td>Negative = behind schedule</td></tr>
+<tr><td>CPI</td><td>EV ÷ AC</td><td>Value earned per unit spent</td></tr>
+<tr><td>SPI</td><td>EV ÷ PV</td><td>Rate of progress vs plan</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="forecasting">Forecasting</h2>
+<div class="tbl-wrap"><table><thead><tr><th>Measure</th><th>Formula</th><th>Use when</th></tr>
+</thead>
+<tbody>
+<tr><td>EAC</td><td>BAC ÷ CPI</td><td>Current cost performance will continue (most common)</td></tr>
+<tr><td>EAC</td><td>AC + (BAC − EV)</td><td>Past variance was a one-off</td></tr>
+<tr><td>EAC</td><td>AC + (BAC − EV) ÷ (CPI × SPI)</td><td>Schedule pressure will also drive cost</td></tr>
+<tr><td>ETC</td><td>EAC − AC</td><td>Money still needed</td></tr>
+<tr><td>VAC</td><td>BAC − EAC</td><td>Expected over/under at completion</td></tr>
+<tr><td>TCPI</td><td>(BAC − EV) ÷ (BAC − AC)</td><td>Efficiency needed to finish on budget</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="worked-example">Worked example</h2>
+<p>A $100,000 project is planned to last 10 months with even spending. At the end of month 4:</p>
+<ul><li>PV = $40,000 (40% should be done)</li>
+<li>The team estimates 35% of the work is done, so EV = $35,000</li>
+<li>Invoices and timesheets show AC = $42,000</li>
+</ul>
+<p>CV = 35,000 − 42,000 = <strong>−$7,000</strong> (over budget). SV = 35,000 − 40,000 = <strong>−$5,000</strong> (behind schedule). CPI = 0.83; SPI = 0.88. EAC = 100,000 ÷ 0.83 ≈ <strong>$120,000</strong>. TCPI = 65,000 ÷ 58,000 ≈ 1.12 — the team would need to be 12% more efficient than planned for the rest of the project, which rarely happens without changing scope. Try these numbers in the <a href="../tools/earned-value-calculator.html">EVM calculator</a>.</p>
+<h2 id="measuring-earned-value-honestly">Measuring earned value honestly</h2>
+<p>EVM is only as good as the EV estimate. Common rules for crediting progress:</p>
+<ul><li><strong>0/100:</strong> credit only when complete — conservative, good for short tasks.</li>
+<li><strong>50/50:</strong> half on start, half on finish.</li>
+<li><strong>Weighted milestones:</strong> credit at defined checkpoints.</li>
+<li><strong>Physical % complete:</strong> for measurable work (metres laid, pages written).</li>
+</ul>
+<p>Avoid "percent complete by gut feel" — tasks famously sit at 90% for weeks.</p>
+<h2 id="reporting-evm-to-executives">Reporting EVM to executives</h2>
+<p>Skip the acronyms. Say: <em>"For every dollar we spend we are getting 83 cents of planned work, and we are progressing at 88% of the planned rate. At this rate we will finish about $20,000 over budget and two months late unless we act. Here are three options."</em></p>
+<div class="keybox no-print"><h3>Put this into practice</h3>
+<p class="mb0">Use our free tools to apply what you just read — or <a href="../get-help.html">get a free consultation</a> if you want an expert to look at your project.</p>
+</div>
+</article>
+<aside class="aside">
+<div class="card toc"><h3>On this page</h3>
+<a href="#the-three-core-measures">The three core measures</a><a href="#variances-and-indices">Variances and indices</a><a href="#forecasting">Forecasting</a><a href="#worked-example">Worked example</a><a href="#measuring-earned-value-honestly">Measuring earned value honestly</a><a href="#reporting-evm-to-executives">Reporting EVM to executives</a></div>
+<div class="card"><h3>Free tools &amp; guides</h3>
+<ul class="list-check small"><li><a href="../tools/earned-value-calculator.html">Earned value calculator</a></li>
+<li><a href="../templates.html#budget-tracker">Budget tracker template</a></li>
+<li><a href="../templates.html#status-report">Status report template</a></li>
+</ul>
+</div>
+<div class="card" style="background:var(--brand-soft)"><h3>Stuck on a project?</h3>
+<p>Get matched with a vetted PM consultant or the right software in 48 hours.</p>
+<a class="btn btn-primary btn-sm mt" href="../get-help.html">Get expert help</a></div>
+</aside></div>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap"><div id="f-cols"></div>
+<nav class="f-legal" aria-label="Footer"><a href="../about.html">About</a> · <a href="../contact.html">Contact</a> · <a href="../get-help.html">Get expert help</a> · <a href="../support.html">Support us</a> · <a href="../advertise.html">Advertise</a> · <a href="../contests.html">Contests</a> · <a href="../careers.html">Careers</a> · <a href="../privacy.html">Privacy policy</a> · <a href="../terms.html">Terms of use</a> · <a href="../cookies.html">Cookie policy</a> · <a href="../disclaimer.html">Disclaimer</a> · <a href="../trademark.html">Trademark &amp; copyright</a> · <a href="../sitemap.html">Sitemap</a></nav>
+<div class="f-bottom"><span>© 2026 Project.Management. Original content. Independent; not affiliated with PMI®, ProjectManagement.com, PeopleCert/AXELOS, Scrum.org, Scrum Alliance or any software vendor. <a href="../trademark.html">Trademark notice</a>.</span><span>Interested in this website or domain? <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></span></div>
+</div>
+</footer>
+<script src="../assets/js/search-index.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>
