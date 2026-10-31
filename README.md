@@ -2,7 +2,7 @@
 
 Free, no-signup project management tools, templates and guides. A static site hosted on GitHub Pages from the `main` branch root.
 
-- **Live (GitHub Pages):** https://webworksa1.github.io/project-management/
+- **Live (GitHub Pages):** https://webworksa1.github.io/Project-Management/
 - **Domain:** project.management (see "Custom domain" below)
 - **Interested in this website, the domain, sponsorship, advertising or partnership?** https://web.works/contact
 
@@ -14,16 +14,15 @@ Free, no-signup project management tools, templates and guides. A static site ho
 - **Compliance:** privacy, cookie, terms, disclaimer and trademark/copyright pages. Schema.org markup, sitemaps and robots.txt.
 
 ## Editing
-Page sources live in `_build/src/pages/` as HTML fragments with a JSON header comment. Rebuild the site with:
+Every page is plain static HTML, so you can edit any `.html` file directly. Shared parts live in `assets/`:
+- `assets/css/style.css` holds the design system.
+- `assets/js/main.js` holds the menus, footer columns, modals, forms and search.
+- `assets/js/tools/` holds one script per tool.
 
-```bash
-cd _build && python3 build.py   # writes the generated pages to the repo root
-```
-
-Shared assets are in `assets/` (CSS, JS, images).
+The original generator (`build.py` plus page fragments) is kept outside the repo and can be added later for bulk edits.
 
 ## Go-live checklist
-1. **GitHub Pages:** Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)`.
+1. **GitHub Pages:** Settings → Pages → Source: *Deploy from a branch* → `main` / `(root)` → Save. The site then appears at https://webworksa1.github.io/Project-Management/
 2. **FormSubmit:** the first form submission sends an activation email to the site inbox. Click **Activate** once.
 3. **Custom domain:**
    - Add a `CNAME` file containing `project.management`.
