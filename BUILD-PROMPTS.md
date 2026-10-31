@@ -25,7 +25,7 @@
 > - The exact AdSense code in `<head>`: `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>`
 > - `<meta name="google-adsense-account" content="ca-pub-6620975821265271">`
 > - Canonical URL, Open Graph tags and JSON-LD (WebSite, Organization, Article, WebApplication, FAQPage, BreadcrumbList).
-> - A top bar: "Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership", linking to https://web.works/contact.
+> - A top bar: "Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership". The whole sentence is the link to the owner's contact page; never display the URL itself as text.
 >
 > **Site files:** `ads.txt` (`google.com, pub-6620975821265271, DIRECT, f08c47fec0942fa0`), `robots.txt`, `sitemap.xml`, an HTML sitemap, a `404.html` that works at any depth, a web manifest, a favicon, an OG image and `.nojekyll`.
 >
@@ -87,7 +87,7 @@
 > - **Lead generation (`get-help.html`):** a three-step qualifying form covering need, team size, industry, budget, timeline, methodology, details and contact, plus consent. Prefill it from query strings sent by the quiz, matcher and certification pages.
 > - **Repeated conversion points:** quick-lead form on the homepage, sticky CTA, toolkit modal (lead magnet that unlocks a section), newsletter, and CTAs inside guides and tools.
 > - **Support page:** one-time or monthly giving, three tiers, choice of where funds go (operations, tools, prizes, hiring, promotion), and "secure payment link" fulfilment. Never collect card data in a form.
-> - **Advertise page:** six sponsorship packages, a media-kit request form, editorial standards, and the web.works acquisition notice.
+> - **Advertise page:** six sponsorship packages, a media-kit request form, editorial standards, and an owner-contact notice for acquisition.
 > - **Contests page:** monthly skill-based challenge, judging criteria, prizes, entry form, official rules (18+, no purchase necessary).
 > - **Careers page:** career guide, six open roles, talent-pool application form.
 > - **About and Contact:** About with editorial standards and funding model; Contact with a topic selector and a click-to-email link that never exposes the address.
